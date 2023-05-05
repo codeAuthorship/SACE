@@ -443,17 +443,6 @@ def set_seed(args):
     if args.n_gpu > 0:
         torch.cuda.manual_seed_all(args.seed)
 
-#train/valid/test-cs.txt = original dataset
-#train/valid/test-cs.txt2 = data from MTCS with no pre-processing
-#train/valid/test-cs.txt3 = data from MTCS with 3 part segmentation
-#train/valid/test-cs.txt4 = data from MTCS with more segmentation
-#train/valid/test-cs.txt5 = text4 with blank space deletion (this dataset achieved 89 codebleu score)
-
-#train/valid/test-cs.txt_new = original increased dataset and 1 segmentation.
-#train/valid/test-cs.txt_new2 = using same source code/ different target code
-#train/valid/test-cs.txt_new3 = using chained source-target codes
-#train/valid/test-cs.txt_new4 = using 1 pair of source-target 5 challenges for training, 3 challenges for testing. and 3parts segmentation
-
 
 def main():
     parser = argparse.ArgumentParser()
