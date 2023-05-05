@@ -7,7 +7,7 @@ We present SCAE, a code authorship obfuscation technique that leverages a Seq2Se
 
 
 <p align="center">
-    <img src="https://github.com/codeAuthorship/SCAE/files/11402828/proposedmodel.pdf" alt="SCAE" width="70%" height="70%">
+    <img src="[https://github.com/codeAuthorship/SCAE/files/11402828/proposedmodel.pdf](https://github.com/codeAuthorship/SCAE/blob/main/S2CAE.png)" alt="SCAE" width="70%" height="70%">
 
 
 
