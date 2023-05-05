@@ -1,5 +1,12 @@
 # SCAE: Can Seq2Seq Code Transformation Evade Code Authorship Attribution?
 
+## Overview
+Code authorship attribution is the problem of identifying authors of programming language codes through the stylistic features in their codes, a topic that recently witnessed significant interest with outstanding performance. To defeat attribution, the state-of-the-art approach uses the Monte-Carlo Tree Search (MCTS) for code transformation to obfuscate codes. Although effective in misleading code authorship attribution, MCTS is disadvantaged by exhaustive resources for identifying optimal code transformations. Can we efficiently evade code authorship attribution without MCTS?
+
+We present SCAE, a code authorship obfuscation technique that leverages a Seq2Seq code transformer called StructCoder. Unlike MCTS, SCAE saves processing time while maintaining the performance of the transformation. SCAE customizes StructCoder, a system originally designed for function-level code translation from one language to another (e.g., Java to C#), using transfer learning. To alleviate the need for manually transformed training data, we leverage the outputs from the MCTS method to construct a source-target code pair dataset and use it to train/fine-tune StructCoder for C++ to C++ code transformation that maintains the stylistic patterns of the target code. Our evaluation shows that SCAE improved the efficiency at a slight degradation of accuracy compared to MCTS. We were able to reduce the processing time by approximately 68% while maintaining an 85% transformation success rate and up to 95.77% evasion success rate in the untargeted setting. We further show the limitations of Seq2Seq models in the targeted domain.
+
+StructCoder
+
 There is existing research for Code Authorship [1](https://dl.acm.org/doi/abs/10.1145/3243734.3243738) which identifies authors of source codes by employing TF-IDF.
 
 Also, there is another existing research to evade the codeaAuthorship, which called Misleading Code Authorship by Monte Carlo Tree Search (MCTS) [2](https://www.usenix.org/conference/usenixsecurity19/presentation/quiring) (we refer this study as MAA).
