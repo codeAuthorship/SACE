@@ -5,7 +5,12 @@ Code authorship attribution is the problem of identifying authors of programming
 
 We present SCAE, a code authorship obfuscation technique that leverages a Seq2Seq code transformer called StructCoder. Unlike MCTS, SCAE saves processing time while maintaining the performance of the transformation. SCAE customizes StructCoder, a system originally designed for function-level code translation from one language to another (e.g., Java to C#), using transfer learning. To alleviate the need for manually transformed training data, we leverage the outputs from the MCTS method to construct a source-target code pair dataset and use it to train/fine-tune StructCoder for C++ to C++ code transformation that maintains the stylistic patterns of the target code. Our evaluation shows that SCAE improved the efficiency at a slight degradation of accuracy compared to MCTS. We were able to reduce the processing time by approximately 68% while maintaining an 85% transformation success rate and up to 95.77% evasion success rate in the untargeted setting. We further show the limitations of Seq2Seq models in the targeted domain.
 
-StructCoder
+
+
+
+[proposedmodel.pdf](https://github.com/codeAuthorship/SCAE/files/11402828/proposedmodel.pdf)
+
+
 
 There is existing research for Code Authorship [1](https://dl.acm.org/doi/abs/10.1145/3243734.3243738) which identifies authors of source codes by employing TF-IDF.
 
