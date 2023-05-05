@@ -9,7 +9,6 @@ In this project, we used outputs from [2](https://www.usenix.org/conference/usen
 ## Setup the conda enviorment:
 1. Create virtual enviorment with requirement.
 - conda env scoder create -f scoder.yml
-
 - conda activate scoder
 
 ##The pre-trained checkpoint from Structcoder [3](https://arxiv.org/abs/2206.05239) that we used for our expriment is uploaded on [GoogleDrive](https://drive.google.com/file/d/1V98OciKJKftjR1ifm7elB1f3DO1UU7sp/view?usp=sharing). (You can also find it from the original work).
