@@ -10,7 +10,6 @@ We present SCAE, a code authorship obfuscation technique that leverages a Seq2Se
     <img src="https://github.com/codeAuthorship/SCAE/blob/main/S2CAE.png" alt="SCAE" width="70%" height="70%">
 
 
-
 ## Setup the conda enviorment:
     conda env scoder create -f scoder.yml
     conda activate scoder    
@@ -29,14 +28,12 @@ The names of data for Untargeted and Targeted transformation are the same. There
 ## Pre-trained StructCoder:
 1. Download The pre-trained checkpoint of Structcoder [3](https://arxiv.org/abs/2206.05239) from [GoogleDrive](https://drive.google.com/file/d/1V98OciKJKftjR1ifm7elB1f3DO1UU7sp/view?usp=sharing).
 - You can also download it from the original work.
+2. Place it under [saved_models/pretrain](https://github.com/codeAuthorship/SCAE/tree/main/src/saved_models/pretrain) folder.
 
-## The pre-trained checkpoint from Structcoder [3](https://arxiv.org/abs/2206.05239) that we used for our expriment is uploaded on [GoogleDrive](https://drive.google.com/file/d/1V98OciKJKftjR1ifm7elB1f3DO1UU7sp/view?usp=sharing). (You can also find it from [the original work](https://drive.google.com/file/d/10Jee9uv4-XuqecWTlKvo1CeNQh1hOXEs/view)).
 
 
-Download this file and save into src/saved_models/pretrain directory.
-
-## Finetune on translation
-python3 run_translation.py --do_train --do_eval --do_test --source_lang cpp --target_lang cpp --alpha1_clip -4 --alpha2_clip -4
+## Finetune on translation command:
+    python3 run_translation.py --do_train --do_eval --do_test --source_lang cpp --target_lang cpp --alpha1_clip -4 --alpha2_clip -4
 
 
 ## MAA's Targeted Attack Analysis is presented in [here](https://github.com/codeAuthorship/MAA-Targeted-Attack)
