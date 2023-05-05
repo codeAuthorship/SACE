@@ -15,6 +15,13 @@ In this project, we used outputs from [2](https://www.usenix.org/conference/usen
 ## Data prepraration:
 1. Untargeted Trasnformation.
 - Move training, validation, and testing files from [Untargeted_transformation](https://github.com/codeAuthorship/SCAE/tree/main/data/Untatgeted_Transformation) to [data](https://github.com/codeAuthorship/SCAE/tree/main/src/data) in src folder.
+- In [data](https://github.com/codeAuthorship/SCAE/tree/main/src/data), there should be train.cpp.text_1&2.cpp, valid.cpp.text_1&2.cpp, and test.cpp.text_1&2.cpp.
+
+2. Targeted Trasnformation.
+- Move training, validation, and testing files from [Targeted_transformation](https://github.com/codeAuthorship/SCAE/tree/main/data/Targeted_Transformation) to [data](https://github.com/codeAuthorship/SCAE/tree/main/src/data) in src folder.
+- In [data](https://github.com/codeAuthorship/SCAE/tree/main/src/data), there should be train.cpp.text_1&2.cpp, valid.cpp.text_1&2.cpp, and test.cpp.text_1&2.cpp.
+
+### The names of data for Untargeted and Targeted transformation are the same. Therefore, we need to modify it to avoid conflict.
 
 ##The pre-trained checkpoint from Structcoder [3](https://arxiv.org/abs/2206.05239) that we used for our expriment is uploaded on [GoogleDrive](https://drive.google.com/file/d/1V98OciKJKftjR1ifm7elB1f3DO1UU7sp/view?usp=sharing). (You can also find it from the original work).
 
