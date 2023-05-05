@@ -12,10 +12,8 @@ We present SCAE, a code authorship obfuscation technique that leverages a Seq2Se
 
 
 ## Setup the conda enviorment:
-1. Create a virtual enviorment with requirements using conda and scoder.yml file.
-- conda env scoder create -f scoder.yml
-2. Activate the virtual enviorment.
-- conda activate scoder
+    conda env scoder create -f scoder.yml
+    conda activate scoder    
 
 ## Data prepraration:
 1. Untargeted Trasnformation.
